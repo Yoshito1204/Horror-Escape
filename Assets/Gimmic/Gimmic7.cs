@@ -14,6 +14,11 @@ public class Gimmic7 : MonoBehaviour
     private GameObject ImageText;
     private AudioSource audioSource;
     public static bool IsYes;
+    public static bool hasLighter = false;
+    private SearchButton SearchB;
+    public Sprite Lighter;
+    public GameObject nowItem;
+    private Image nowitem;
 
     private void Awake() {
         LastSelect.SetActive(false);
@@ -22,6 +27,7 @@ public class Gimmic7 : MonoBehaviour
         ItemB = GameObject.Find("ItemBoxButton");
         NowUseB = GameObject.Find("UsingItem");
         ImageText = GameObject.Find("TextImage");
+        SearchB = GetComponent<SearchButton>();
     }
 
     // Start is called before the first frame update
@@ -36,12 +42,22 @@ public class Gimmic7 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+          nowitem = nowItem.GetComponent<Image>();
+      if(nowitem.sprite == Lighter){
+          hasLighter = true;
+          //SearchB.outcome = "はしごを立てかけた。";    
+        }
     }
 
     public void OnClickGimmic7(){
-        LastSelect.SetActive(true);
+        bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Lighter);
+
+        if(hasItem == true && hasLighter == true){
+            LastSelect.SetActive(true);
         ImageText.SetActive(false);
+        }
+
+        
     }
 
     public void No(){

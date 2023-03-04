@@ -13,6 +13,7 @@ public class PanelChanger : MonoBehaviour
    public GameObject Map;
    public GameObject Hint;
    public GameObject Camera;
+   private PerlinNoiseShaker perlinNoise;
    public GameObject Bar;
    public bool dooropen;
    public bool dailclear;
@@ -76,6 +77,8 @@ public class PanelChanger : MonoBehaviour
       rightArrow.SetActive(true);
       leftArrow.SetActive(true);
       audioSource = GetComponent<AudioSource>();
+      perlinNoise = Camera.GetComponent<PerlinNoiseShaker>();
+      perlinNoise.enabled = false;
       dooropen = false;
       dailclear = false;
       GoLightNum = 0;
@@ -88,6 +91,7 @@ public class PanelChanger : MonoBehaviour
       Bar.SetActive(false);
       Phone.SetActive(false);
       CallPhone.SetActive(false);
+      
       ShowPanel(Panel.Panel0);
     }
 
@@ -348,12 +352,15 @@ public class PanelChanger : MonoBehaviour
        yield return new WaitForSeconds(3);
       
       Yuurei3.SetActive(false);
+      perlinNoise.enabled = true;
+      //perlinNoise.Shake(100f,100f);
        GirlFace.SetActive(true);
        audioSource.PlayOneShot(se1);
        
-
        yield return new WaitForSeconds(1);
 
+       perlinNoise.enabled = false;
+      
        GirlFace.SetActive(false);
        rightArrow.SetActive(true);
        leftArrow.SetActive(true);

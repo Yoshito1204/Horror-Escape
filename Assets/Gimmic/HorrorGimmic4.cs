@@ -34,7 +34,7 @@ public class HorrorGimmic4 : MonoBehaviour
 
     IEnumerator Window(){
 
-        if(knock % 3 == 0){
+        if(knock % 3 == 0 || knock == 1){
         DropFace.SetActive(true);
         face.SetActive(false);
         audioSource.PlayOneShot(lowpiano);

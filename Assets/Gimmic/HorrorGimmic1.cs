@@ -37,7 +37,7 @@ public class HorrorGimmic1 : MonoBehaviour
     public void OnClickHorror1(){
         tapnum++;
  
-        if(tapnum == 3){
+        if(tapnum == 2){
            StartCoroutine("ChangeWindow");
         }
          
