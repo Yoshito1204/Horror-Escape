@@ -42,6 +42,7 @@ public class Gimmic6 : MonoBehaviour
         }
     }
 
+//注射器を持っていたら人間に刺す
     public void OnClickGimmic6(){
          bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Injector);
 

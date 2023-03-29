@@ -39,6 +39,7 @@ public class Gimmic2 : MonoBehaviour
         }
     }
 
+//はしごを持っていたら壁に立てかける
     public void OnClickGimmic2(){
 　　　　bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Ladder);
 

@@ -39,6 +39,7 @@ public class SearchButton : MonoBehaviour
          
     }
 
+//調べる
     public void SearchArea(){
         if(ImageText.activeSelf == false){
             ImageText.SetActive(true);

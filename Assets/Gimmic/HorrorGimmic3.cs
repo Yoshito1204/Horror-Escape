@@ -26,6 +26,7 @@ public class HorrorGimmic3 : MonoBehaviour
         }
     }
 
+//スマホをバイブレーションさせながらたくさんの手を出現させる
     public void OnClickHorror3(){
         mojinum++;
 

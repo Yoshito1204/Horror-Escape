@@ -37,6 +37,7 @@ public class Gimmic3 : MonoBehaviour
         }
     }
 
+//バールを持っていたら木材を剥がす
     public void OnClickGimmic3(){
          bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Bar);
         

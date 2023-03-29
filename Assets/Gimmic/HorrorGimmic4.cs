@@ -32,6 +32,7 @@ public class HorrorGimmic4 : MonoBehaviour
        StartCoroutine("Window");
     }
 
+//knockが1または3で割り切れるとき人形の顔を落とす
     IEnumerator Window(){
 
         if(knock % 3 == 0 || knock == 1){

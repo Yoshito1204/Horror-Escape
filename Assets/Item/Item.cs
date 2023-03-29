@@ -10,6 +10,8 @@ public class Item : MonoBehaviour
     private void Start() {
         
     }
+
+    //アイテムの種類を列挙
     public enum ItemType
     {
          Hummer,

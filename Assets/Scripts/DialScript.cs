@@ -32,6 +32,7 @@ public class DialScript : MonoBehaviour
         
     }
 
+    //DialLを押した
      public void PushButtonDialL()
     {
         NumL = NumL+1; //押される毎に１足していく
@@ -57,7 +58,7 @@ public class DialScript : MonoBehaviour
         buttonDialMText.transform.GetChild(0).GetComponent<Text>().text = NumM.ToString();
     }
 
-    //DialRを押した
+    //DialNを押した
     public void PushButtonDialN()
     {
         NumN = NumN + 1;
@@ -70,6 +71,7 @@ public class DialScript : MonoBehaviour
         buttonDialNText.transform.GetChild(0).GetComponent<Text>().text = NumN.ToString();
     }
 
+    //DialOを押した
     public void PushButtonDialO()
     {
         NumO = NumO + 1;
@@ -82,6 +84,7 @@ public class DialScript : MonoBehaviour
         buttonDialOText.transform.GetChild(0).GetComponent<Text>().text = NumO.ToString();
     }
 
+    //Enterを押した
     public void PushEnter(){
         if(NumL == 4 && NumM == 3 && NumN == 3 && NumO == 6){
             Panel11Back.GetComponent<Image>().sprite = Panel11BackNew; 

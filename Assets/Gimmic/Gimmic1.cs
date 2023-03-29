@@ -30,6 +30,7 @@ public class Gimmic1 : MonoBehaviour
 
     }
 
+//ハンマーを持っていたらフェンスを破壊
     public void OnClickGimmic1(){
         
         bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Hummer);

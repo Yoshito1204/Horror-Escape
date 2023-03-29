@@ -43,6 +43,7 @@ public class HorrorGimmic1 : MonoBehaviour
          
     }
 
+//幽霊が出た後、窓ガラスが割れて、大きな顔が落ちてくる
     IEnumerator ChangeWindow()
     {
         yuurei1.SetActive(true);

@@ -37,6 +37,8 @@ public class PanelChanger : MonoBehaviour
    public AudioClip kimo;
    private AudioSource audioSource;
    public static PanelChanger instance;
+
+   //Panelを列挙
   public enum Panel
    {
       ItemBoxPanel,
@@ -110,7 +112,7 @@ public class PanelChanger : MonoBehaviour
       
     }
 
-
+　　//Panelに移動する
    public void ShowPanel(Panel nextPanel){
       currentPanel = nextPanel;
 
@@ -269,42 +271,46 @@ public class PanelChanger : MonoBehaviour
 
     }
 
+   //ItemBoxPanelを表示
     public void OnItemBoxPanel(){
        itembox.transform.localPosition = Camera.transform.localPosition;
     }
 
+　　//MapPanelを表示
     public void OnMapPanel(){
        Map.transform.localPosition = Camera.transform.localPosition;
     }
 
+　　//HintPanelを表示
     public void OnHintPanel(){
        Hint.transform.localPosition = Camera.transform.localPosition;
     }
 
+　　//Mapから玄関に移動
     public void OnEntrance(){
       ShowPanel(Panel.Panel0);
       Map.transform.localPosition = new Vector3(2000,1500,0);
     }
 
+　　//Mapから和室に移動
     public void OnWasitu(){
       ShowPanel(Panel.Panel3);
       Map.transform.localPosition = new Vector3(2000,1500,0);
     }
 
+　　//Mapから黒板のある部屋に移動
     public void OnKokuban(){
       ShowPanel(Panel.Panel6);
       Map.transform.localPosition = new Vector3(2000,1500,0);
     }
 
-    public void OnKokubanFront(){
-      ShowPanel(Panel.Panel20);
-    }
-
+　　//Mapから屋根裏に移動
     public void OnYaneura(){
       ShowPanel(Panel.Panel10);
       Map.transform.localPosition = new Vector3(2000,1500,0);
     }
 
+　　//Mapから手術室に移動
     public void OnOperating(){
       ShowPanel(Panel.Panel13);
       Map.transform.localPosition = new Vector3(2000,1500,0);
@@ -337,7 +343,11 @@ public class PanelChanger : MonoBehaviour
 
     public void OnFamily(){
       ShowPanel(Panel.Panel19);
-      GoAtticNum++;
+      //GoAtticNum++;
+    }
+
+　　public void OnKokubanFront(){
+      ShowPanel(Panel.Panel20);
     }
 
     public void OnBed(){
@@ -365,6 +375,8 @@ public class PanelChanger : MonoBehaviour
        rightArrow.SetActive(true);
        leftArrow.SetActive(true);
     }
+
+    //右矢印を押したときの移動
     public void OnRightArrow(){
        audioSource.PlayOneShot(walk);
 
@@ -394,6 +406,8 @@ public class PanelChanger : MonoBehaviour
         SearchButton.instance.ImageText.SetActive(false);
        }
     }
+
+    //左矢印を押したときの移動
     public void OnLeftArrow(){
        audioSource.PlayOneShot(walk);
 
@@ -426,6 +440,8 @@ public class PanelChanger : MonoBehaviour
         SearchButton.instance.ImageText.SetActive(false);
        }
     }
+
+    //下矢印を押したときの移動
     public void OnBackArrow(){
 
       HideArrow();

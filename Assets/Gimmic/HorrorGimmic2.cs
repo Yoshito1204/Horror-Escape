@@ -28,6 +28,7 @@ public class HorrorGimmic2 : MonoBehaviour
         StartCoroutine("Doll");
     }
 
+//人形の顔がrnd=3または4の時画面いっぱいに映し出される
     IEnumerator Doll(){
        rnd = Random.Range(0,5);
         

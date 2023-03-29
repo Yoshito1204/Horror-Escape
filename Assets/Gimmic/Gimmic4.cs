@@ -36,6 +36,7 @@ public class Gimmic4 : MonoBehaviour
         }
     }
 
+//血液パックを持っていたらざるの中に破く
     public void OnClickGimmic4(){
          bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Blood);
 

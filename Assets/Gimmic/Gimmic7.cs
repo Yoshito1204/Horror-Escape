@@ -49,6 +49,7 @@ public class Gimmic7 : MonoBehaviour
         }
     }
 
+//ライターを持っていたら「はい」か「いいえ」の選択肢を出す
     public void OnClickGimmic7(){
         bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Lighter);
 
@@ -69,6 +70,7 @@ public class Gimmic7 : MonoBehaviour
        StartCoroutine("PressYes");
     }
 
+//「はい」を押した場合に画面暗転、少女出現、爆発のSEを流す
     IEnumerator PressYes(){
          audioSource.PlayOneShot(audioSource.clip);
         LastSelect.GetComponent<Image>().color = new Color(255,255,255,0f);

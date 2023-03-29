@@ -28,6 +28,7 @@ public class HorrorGimmic6 : MonoBehaviour
        
     }
 
+//幽霊の横顔を出現させる
     public void OnClickHorror6(){
          clicknum++;
          if(clicknum % 3 == 0){

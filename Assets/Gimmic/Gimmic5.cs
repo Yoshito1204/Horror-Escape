@@ -36,6 +36,7 @@ public class Gimmic5 : MonoBehaviour
         }
     }
 
+//鍵を持っていたら南京錠を開ける
     public void OnClickGimmic5(){
          bool hasItem = ItemBox.instance.CanUseItem(Item.ItemType.Key);
 

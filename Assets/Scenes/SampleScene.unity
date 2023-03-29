@@ -971,7 +971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stage3_door: {fileID: 1663515638}
-  Stage3_operation: {fileID: 21300000, guid: 804cc7ae0c70b07429fae9006e7b382b, type: 3}
+  Stage3_operation: {fileID: 21300000, guid: be29b2b948291de48afabc7ad3ea03bb, type: 3}
   BedB: {fileID: 1017763174}
   Bar: {fileID: 21300000, guid: 29baeb01fdff929479dc8f07bb4d3bb5, type: 3}
   nowItem: {fileID: 256933202}
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2b1f4c937da8f8049b4c01af5e6c9f7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8d9f738f704d984fb0ac96796d6e14b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5390,7 +5390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a328914fd2dc4e94fb1a039d1666a1d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c02fa829d386a64792818b7b1bffef7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7971,7 +7971,7 @@ MonoBehaviour:
   Stage6_human: {fileID: 478726285}
   Stage6_nohuman: {fileID: 21300000, guid: d5996cda6c291e24eb6b90cb84c4c725, type: 3}
   Stage2_deadhuman: {fileID: 372692765}
-  Stage2_nodeadhuman: {fileID: 21300000, guid: 05fb2a5e05063694894cc854192abf09, type: 3}
+  Stage2_nodeadhuman: {fileID: 21300000, guid: 7dd8c8164ea2b824aafe1fd9edb2f4aa, type: 3}
   Stage1_nodrum: {fileID: 1001051160}
   Stage1_drum: {fileID: 21300000, guid: 965ed3f8dbd4b404d8f4c62a99c9116d, type: 3}
   DrumB: {fileID: 62833767}
@@ -11058,7 +11058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b185f27e4ce878f4f8fe8973b4a958d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57bd86e406a410b40bf8d69b88df1022, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12913,7 +12913,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eed47e9e4729cf049ac8823b6830c631, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4eeb400fef6c8024ebcdc837e45259db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13520,7 +13520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac64d8004b8c348468eb6792a2b7a48f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d48a1b4af5ad3d44e8c57749d04c13e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13748,7 +13748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b7642c5eb63d064aa50db50320edf18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c5842e38fd9c414f94320efd230da96, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17593,7 +17593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stage2_noladder: {fileID: 780314342}
-  Stage2_ladder: {fileID: 21300000, guid: 2bcab15a5f802c040a6c8c67fac0ea01, type: 3}
+  Stage2_ladder: {fileID: 21300000, guid: 2baee9a944f6059469fe188e03b89ec0, type: 3}
   YaneuraB: {fileID: 1058144063}
   OperationB: {fileID: 1177807062}
   Ladder: {fileID: 21300000, guid: ea4bdd716393dea429d8f2b24da91d0f, type: 3}
@@ -17753,7 +17753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 851351f897671be4ab38468ec22f6e78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0f6b1ec5ae8d2a4cbb3a2a4ff7ff1fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18762,7 +18762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1196891969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20002,7 +20002,7 @@ MonoBehaviour:
   buttonDialNText: {fileID: 2071153315}
   buttonDialOText: {fileID: 1464717438}
   Panel11Back: {fileID: 697294068}
-  Panel11BackNew: {fileID: 21300000, guid: a36db31a75ef3a348b8e5d445a97bc4a, type: 3}
+  Panel11BackNew: {fileID: 21300000, guid: 1986dc0f1b520c64aa56ea0c22217983, type: 3}
   kinko: {fileID: 1845838950}
 --- !u!1 &1274286677
 GameObject:
@@ -22178,7 +22178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1413657971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26829,7 +26829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98f7eec183fefae45879d08aa3b1000a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24628f7f59872704f9eddc5ee3d36a1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33486,7 +33486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stage4_zaru: {fileID: 876656668}
-  Stage4_bloodzaru: {fileID: 21300000, guid: d6d3591d275d3fd4f81472a0255d9271, type: 3}
+  Stage4_bloodzaru: {fileID: 21300000, guid: 98d8cbea7cb3a764bb24e82f96bb2485, type: 3}
   Blood: {fileID: 21300000, guid: 8c528e32cc1edbe4485ed264c071dcc5, type: 3}
   Key: {fileID: 183359622}
   nowItem: {fileID: 256933202}

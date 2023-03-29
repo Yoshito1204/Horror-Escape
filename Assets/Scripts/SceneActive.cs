@@ -34,6 +34,7 @@ public class SceneActive : MonoBehaviour
         Debug.Log ( prevScene.name + "->"  + nextScene.name );
     }
 
+//Titleシーンを訪れた数
     void OnSceneLoaded( Scene scene, LoadSceneMode mode )
     {
         if(scene.name == "Title"){
